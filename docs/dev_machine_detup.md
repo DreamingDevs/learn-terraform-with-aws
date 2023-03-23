@@ -2,7 +2,7 @@
 
 This document outlines different required and optional tools, frameworks, cli, configuration etc., required on your local machine to learn terraform with AWS.
 
-## Local Machine Details
+## My Local Machine Details (Just FYI)
 
 Please find below details of my local machine. I have shared the details to make it easy for people with similar configuration to get started quickly. Infact, `mac` with latest OS should be sufficient to get started.
 
