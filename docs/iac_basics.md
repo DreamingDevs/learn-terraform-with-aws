@@ -20,8 +20,8 @@ Declarative way of programming defines the final result / state of the infra and
 
 Imperative way is more of defininig the granular steps / instructions which the tool should follow to achieve the final result / state.
 
-As imperative way is more instructions based the scope of reusability of the same set of instructions over and over on the same infra resources is very minimal. Also keeping the imperative steps up-to-date with evolving infra is quite challenging especially when it comes to maintaining the current state of the infra resource. 
+As imperative way is more instructions based the scope of reusability of the same set of instructions over and over on the same infra resources is very minimal. Also keeping the imperative steps up-to-date with evolving infra (Configuration Drifts) is quite challenging especially when it comes to maintaining the current state of the infra resource. 
 
-Even though declarative approach solves the afore mentioned challenges in quite easy way, it gets burdened to maintain the current state of the infra resource. However the major advantage of declarative approach is its ability to amend the infra resources with a new state in a easy, understandable and simple langugage.
+Even though declarative approach solves the afore mentioned challenges in quite easy way through State Management, it is also a burden to maintain the current state of the infra resource. However the major advantage of declarative approach is its ability to amend the infra resources with a new state in a easy, understandable and simple langugage. Also declarative approach is idempotent, it always takes the infra to the same defined state.
 
 IMO, both the approaches suits different usecases of the system design especially with varying scale and complexity of the system. Personally I recommend declarative programming model for maintaining infra resources.
