@@ -17,5 +17,6 @@ Are you looking forward to setup your local machine to get started with Terrafor
 
 | Let's get started... | 
 |--|
-| [What is IaC?](./docs/iac_basics.md#what-is-iac) |
-| [Create AWS Account](./docs/dev_machine_setup.md#create-aws-account) |
+| [Development Tools (required for sure)](./docs/dev_machine_setup.md#development-tools-setup-required) |
+| [Create an AWS Account](./docs/dev_machine_setup.md#create-an-aws-account) |
+| [Terminal Setup (completely optional)](./docs/dev_machine_setup.md#terminal-setup-optional) |

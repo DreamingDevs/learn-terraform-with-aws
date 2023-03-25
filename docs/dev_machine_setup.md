@@ -63,7 +63,7 @@ Following development tools are used by me for curatung all the learning exercis
 
 <br />
 
-## Create AWS Account
+## Create an AWS Account
 
 <br />
 
