@@ -60,6 +60,7 @@ Following development tools are used by me for curatung all the learning exercis
 |--|--|--|
 | Git | `brew install git`| 2.40.0 |
 | VS Code | `brew install --cask visual-studio-code`| 1.76.2 |
+| Terraform | `brew tap hashicorp/tap` <br/> `brew install hashicorp/tap/terraform`| 1.4.2 |
 
 <br />
 
