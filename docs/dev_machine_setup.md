@@ -67,12 +67,12 @@ Following development tools are used by me for curatung all the learning exercis
 
 <br />
 
- - Navigate to [create AWS Account](https://portal.aws.amazon.com/billing/signup#/start/email) page. 
+ - Navigate to [Create an AWS Account](https://portal.aws.amazon.com/billing/signup#/start/email) page. 
  - Enter a valid email id and root username. Proceed to verify the email id.
  - Provide contact and address information.
  - Enter Credit / Debit card information for billing purpose. Proceed to verify the card details through the respective bank's authentication system (typically OTP).
     - A nominal fee of 2 INR (Indian currency) will be deducted to verify the authenticity of the card.
     - Going forward card will not charged if the usage is within the limits of free tier. But once exceeded, card will be charged based on usage.
  - Confirm the identity by entering mobile no. and verifying it with OTP.
- - Lastly select the Basic Support - Free plan as we only need this AWS account of executing our exercises.
+ - Lastly select the `Basic Support - Free plan` as we only need this AWS account of executing our exercises.
 
