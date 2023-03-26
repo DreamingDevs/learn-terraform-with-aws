@@ -79,3 +79,9 @@ Following development tools are used by me for curatung all the learning exercis
  - Confirm the identity by entering mobile no. and verifying it with OTP.
  - Lastly select the `Basic Support - Free plan` as we only need this AWS account of executing our exercises.
 
+<br />
+
+## Create an IAM User
+
+When we created an AWS account, a root user account was provisioned for us. This account has the highest possible privileges, through which it can administer the entire AWS account. Hence leveraging the root user account for specific activities like IaC automations, etc., is highly unadvisable. We will create appropriate IAM roles with limited privileges that can be used for IaC automations through Terraform.
+
