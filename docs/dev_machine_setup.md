@@ -81,7 +81,32 @@ Following development tools are used by me for curatung all the learning exercis
 
 <br />
 
+Let's enable MFA for our root user. Login at [AWS Console](https://console.aws.amazon.com/) with root user email and password. Go to IAM resource (through global search in AWS console).
+
+<br />
+
+![IAM Root user MFA](../images/iam_root_user_mfa.png "IAM Root user MFA")
+
+<br />
+
+Proceed with the next flow of steps to enable MFA through apps like Google Authenticator, OKTA Verify, Duo Security etc.
+
+<br />
+
+![IAM Root user MFA Enabled](../images/iam_root_user_mfa_enabled.png "IAM Root user MFA Enabled")
+
+<br /> 
+
+
 ## Create an IAM User
 
+<br />
+
 When we created an AWS account, a root user account was provisioned for us. This account has the highest possible privileges, through which it can administer the entire AWS account. Hence leveraging the root user account for specific activities like IaC automations, etc., is highly unadvisable. We will create appropriate IAM roles with limited privileges that can be used for IaC automations through Terraform.
+
+Let's get started by creating a user at [AWS Console](https://console.aws.amazon.com/) with Root user email and password.
+
+
+
+
 
