@@ -19,4 +19,5 @@ Are you looking forward to setup your local machine to get started with Terrafor
 |--|
 | [Development Tools (required for sure)](./docs/dev_machine_setup.md#development-tools-setup-required) |
 | [Create an AWS Account](./docs/dev_machine_setup.md#create-an-aws-account) |
+| [Create an IAM user group, user, role, and policy to provide access to Terraform](./docs/dev_machine_setup.md#create-an-iam-user-group-user-role-and-policy-to-provide-access-to-terraform) |
 | [Terminal Setup (completely optional)](./docs/dev_machine_setup.md#terminal-setup-optional) |

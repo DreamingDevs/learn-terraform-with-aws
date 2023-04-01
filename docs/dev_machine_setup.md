@@ -106,14 +106,48 @@ When we created an AWS account, a root user account was provisioned for us. This
 
 > NOTE: We can leverage Terraform to create the IAM user, role, and policies. However, as this is the first step towards setting up Terraform, we will proceed to manually create the required AWS resources. Later in this repo, when we work on the IAM user related automations, we will revisit and address this tech debt.
 
-Let's get started by creating an IAM user group at the [AWS Console](https://console.aws.amazon.com/). We will add user to this group later in this section.
+Let's get started by creating an IAM user group at the [AWS Console](https://console.aws.amazon.com/).
 
-![IAM Terraform User Group](../images/iam_tf_user_group.png "IAM Terraform User Group")
+- Enter `tf_user_group` as name for the group
+- No additional configuration is required, proceed to create the group
 
 <br />
 
-Created `tf_user_group` as shown below.
+Created `tf_user_group`.
 
 <br />
 
 ![Created IAM Terraform User Group](../images/iam_tf_user_group_created.png "Created IAM Terraform User Group")
+
+<br />
+
+Now lets proceed to create an IAM user.
+
+- Enter `tf_user` as name
+- Associate the `tf_user` with `tf_user_group`
+- No additional configuration is required, review and create the user
+
+<br />
+
+Created `tf_user`.
+
+<br />
+
+![IAM Terraform user created](../images/iam_tf_user_created.png "Review and create Terraform user")
+
+<br />
+
+Let's enable access keys for `tf_user` using which Terraform can access AWS and maintain resources. 
+
+- Navigate to `Security Credentials` section of `tf_user`
+- Select `create access key` option
+- Select `Command Line Interface (CLI)` as the use case
+- Create access key
+- Copy the generated Access key and Secret. **Store them in a SECURE PLACE**.
+   - We will use these credentials in a while.
+
+
+<br />
+
+![IAM Terraform user with Access Key](../images/iam_tf_user_with_access_key.png "IAM Terraform user with Access Key")
+
