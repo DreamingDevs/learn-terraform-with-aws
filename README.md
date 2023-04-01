@@ -4,10 +4,10 @@ Few of the basic details related to Infrastructure as Code (IaC) which might ser
 
 <br />
 
-| Read about... | 
-|--|
-| [What is IaC?](./docs/iac_basics.md#what-is-iac) |
-| [Declarative vs Imperative Programming Models](./docs/iac_basics.md#declarative-vs-imperative-programming-models) |
+| Learning Day | Read about... | 
+|--|--|
+| Day 0 | [What is IaC?](./docs/iac_basics.md#what-is-iac) |
+| Day 0 | [Declarative vs Imperative Programming Models](./docs/iac_basics.md#declarative-vs-imperative-programming-models) |
 
 <br />
 
@@ -15,9 +15,10 @@ Are you looking forward to setup your local machine to get started with Terrafor
 
 <br />
 
-| Let's get started... | 
-|--|
-| [Development Tools (required for sure)](./docs/dev_machine_setup.md#development-tools-setup-required) |
-| [Create an AWS Account](./docs/dev_machine_setup.md#create-an-aws-account) |
-| [Create an IAM user group, user, role, and policy to provide access to Terraform](./docs/dev_machine_setup.md#create-an-iam-user-group-user-role-and-policy-to-provide-access-to-terraform) |
-| [Terminal Setup (completely optional)](./docs/dev_machine_setup.md#terminal-setup-optional) |
+| Learning Day | Let's get started... | 
+|--|--|
+| Day 1 | [Development Tools (required for sure)](./docs/dev_machine_setup.md#development-tools-setup-required) |
+| Day 1 | [Terminal Setup (completely optional)](./docs/dev_machine_setup.md#terminal-setup-optional) |
+| Day 1 | [Create an AWS Account](./docs/dev_machine_setup.md#create-an-aws-account) |
+| Day 2 | [Create an IAM user group, user, role, and policy to provide access to Terraform](./docs/dev_machine_setup.md#create-an-iam-user-group-user-role-and-policy-to-provide-access-to-terraform) |
+
