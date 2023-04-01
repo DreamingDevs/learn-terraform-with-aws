@@ -98,15 +98,22 @@ Proceed with the next flow of steps to enable MFA through apps like Google Authe
 <br /> 
 
 
-## Create an IAM User
+## Create an IAM user group, user, role, and policy to provide access to Terraform
 
 <br />
 
-When we created an AWS account, a root user account was provisioned for us. This account has the highest possible privileges, through which it can administer the entire AWS account. Hence leveraging the root user account for specific activities like IaC automations, etc., is highly unadvisable. We will create appropriate IAM roles with limited privileges that can be used for IaC automations through Terraform.
+When we created an AWS account, a root user account was provisioned for us. This account has the highest possible privileges, through which it can administer the entire AWS account. Hence leveraging the root user account for specific activities like IaC automations, etc., is highly unadvisable. We will create an appropriate IAM user with a specific role and policies with limited privileges that can be used for IaC automations through Terraform.
 
-Let's get started by creating a user at [AWS Console](https://console.aws.amazon.com/) with Root user email and password.
+> NOTE: We can leverage Terraform to create the IAM user, role, and policies. However, as this is the first step towards setting up Terraform, we will proceed to manually create the required AWS resources. Later in this repo, when we work on the IAM user related automations, we will revisit and address this tech debt.
 
+Let's get started by creating an IAM user group at the [AWS Console](https://console.aws.amazon.com/). We will add user to this group later in this section.
 
+![IAM Terraform User Group](../images/iam_tf_user_group.png "IAM Terraform User Group")
 
+<br />
 
+Created `tf_user_group` as shown below.
 
+<br />
+
+![Created IAM Terraform User Group](../images/iam_tf_user_group_created.png "Created IAM Terraform User Group")
