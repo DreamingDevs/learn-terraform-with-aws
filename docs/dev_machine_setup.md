@@ -154,6 +154,44 @@ Let's enable access keys for `tf_user` using which Terraform can access AWS and 
 
 As the next step, we will create an AWS Policy. This policy will only have least possible privileges which are absolutely required for terraform activities. This way we can limit the overall access of terraform user to AWS resources.
 
+> NOTE: To keep things simple, we will create a policy which will only provide limited access to S3 service.
+
+- Select `JSON` option after selecting the `Create policy`.
+- Enter below JSON which will 
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "tfPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateBucket",
+                "s3:ListBucket",
+                "s3:DeleteBucketPolicy",
+                "s3:GetBucketPolicy",
+                "s3:PutObject",
+                "s3:GetObject",
+                "s3:PutBucketPolicy",
+                "s3:DeleteAccessPointPolicy",
+                "s3:DeleteObject",
+                "s3:PutAccessPointPolicy",
+                "s3:GetAccessPointPolicy",
+                "s3:DeleteBucket",
+                "s3:GetObjectVersion"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+- Review and create by entering `tf_policy` as name (`description` and `tags` are optional). 
+
+<br />
+
+![IAM Terraform user policy created](../images/iam_tf_user_policy_created.png "IAM Terraform user policy created")
+
 <br /> 
 
 Now we will proceed to create an IAM Role which our `tf_user` can assume for provisioning and maintaining AWS resources. 
