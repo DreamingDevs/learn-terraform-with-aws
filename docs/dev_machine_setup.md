@@ -146,8 +146,33 @@ Let's enable access keys for `tf_user` using which Terraform can access AWS and 
 - Copy the generated Access key and Secret. **Store them in a SECURE PLACE**.
    - We will use these credentials in a while.
 
-
 <br />
 
 ![IAM Terraform user with Access Key](../images/iam_tf_user_with_access_key.png "IAM Terraform user with Access Key")
 
+<br />
+
+As the next step, we will create an AWS Policy. This policy will only have least possible privileges which are absolutely required for terraform activities. This way we can limit the overall access of terraform user to AWS resources.
+
+<br /> 
+
+Now we will proceed to create an IAM Role which our `tf_user` can assume for provisioning and maintaining AWS resources. 
+
+- Select `Custom trust policy`
+- Enter below statement as the policy.
+
+```
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "tf_assume_role",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::XXXXXXXXXXXX:user/tf_user"
+			},
+			"Action": "sts:AssumeRole"
+		}
+	]
+}
+```
