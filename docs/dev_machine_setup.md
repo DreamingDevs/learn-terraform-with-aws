@@ -106,6 +106,8 @@ When we created an AWS account, a root user account was provisioned for us. This
 
 > NOTE: We can leverage Terraform to create the IAM user, role, and policies. However, as this is the first step towards setting up Terraform, we will proceed to manually create the required AWS resources. Later in this repo, when we work on the IAM user related automations, we will revisit and address this tech debt.
 
+> NOTE: To keep things simple, we will create a policy which will provide limited access to S3 service. This can be extended to all other services which `tf_user` needs to access.
+
 Let's get started by creating an IAM user group at the [AWS Console](https://console.aws.amazon.com/).
 
 - Enter `tf_user_group` as name for the group
@@ -154,7 +156,7 @@ Let's enable access keys for `tf_user` using which Terraform can access AWS and 
 
 As the next step, we will create an AWS Policy. This policy will only have least possible privileges which are absolutely required for terraform activities. This way we can limit the overall access of terraform user to AWS resources.
 
-> NOTE: To keep things simple, we will create a policy which will only provide limited access to S3 service.
+> NOTE: As already mentioned aboved, to keep things simple, we will create a policy which will provide limited access to S3 service. This can be extended to all other services which `tf_user` needs to access.
 
 - Select `JSON` option after selecting the `Create policy`.
 - Enter below JSON which will 
@@ -194,7 +196,7 @@ As the next step, we will create an AWS Policy. This policy will only have least
 
 <br /> 
 
-Now we will proceed to create an IAM Role which our `tf_user` can assume for provisioning and maintaining AWS resources. 
+Now we will proceed to create an IAM Role which our `tf_user` can assume for provisioning and maintaining AWS resources. The IAM role will have the `tf_policy` attached to it for providing access to `tf_user`.
 
 - Select `Custom trust policy`
 - Enter below statement as the policy.
@@ -214,3 +216,13 @@ Now we will proceed to create an IAM Role which our `tf_user` can assume for pro
 	]
 }
 ```
+- Select `tf_policy` in Add permissions section.
+- Create role by entering `tf_role` as the name (`description` and `tags` are optional). 
+
+<br />
+
+![IAM Terraform user role created](../images/iam_tf_user_role_created_1.png "IAM Terraform user role created")
+
+<br />
+
+![IAM Terraform user role created](../images/iam_tf_user_role_created_2.png "IAM Terraform user role created")
