@@ -91,29 +91,24 @@ As the next step, we will create an AWS Policy. This policy will only have least
 > NOTE: As already mentioned aboved, to keep things simple, we will create a policy which will provide limited access to S3 service. This can be extended to all other services which `tf_user` needs to access.
 
 - Select `JSON` option after selecting the `Create policy`.
-- Enter below JSON which will 
+- Enter below JSON which will provide all `LIST`, `GET` permissions on the S3 bucket. It also provides `CREATE`, `DELETE` of S3
 
 ```
 {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "tfPolicy",
+            "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-                "s3:CreateBucket",
-                "s3:ListBucket",
-                "s3:DeleteBucketPolicy",
-                "s3:GetBucketPolicy",
+                "s3:Get*",
+                "s3:List*",
                 "s3:PutObject",
-                "s3:GetObject",
-                "s3:PutBucketPolicy",
-                "s3:DeleteAccessPointPolicy",
+                "s3:PutBucketAcl",
+                "s3:CreateBucket",
                 "s3:DeleteObject",
-                "s3:PutAccessPointPolicy",
-                "s3:GetAccessPointPolicy",
                 "s3:DeleteBucket",
-                "s3:GetObjectVersion"
+                "s3:PutObjectAcl"
             ],
             "Resource": "*"
         }
