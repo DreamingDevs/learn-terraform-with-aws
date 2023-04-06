@@ -138,7 +138,7 @@ Now we will proceed to create an IAM Role which our `tf_user` can assume for pro
 	"Version": "2012-10-17",
 	"Statement": [
 		{
-			"Sid": "tf_assume_role",
+			"Sid": "tfrole",
 			"Effect": "Allow",
 			"Principal": {
 				"AWS": "arn:aws:iam::XXXXXXXXXXXX:user/tf_user"
