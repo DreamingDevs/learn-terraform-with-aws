@@ -91,7 +91,7 @@ As the next step, we will create an AWS Policy. This policy will only have least
 > NOTE: As already mentioned aboved, to keep things simple, we will create a policy which will provide limited access to S3 service. This can be extended to all other services which `tf_user` needs to access.
 
 - Select `JSON` option after selecting the `Create policy`.
-- Enter below JSON which will provide all `LIST`, `GET` permissions on the S3 bucket. It also provides `CREATE`, `DELETE` of S3
+- Enter below JSON which will provide all `LIST`, `GET` permissions on S3 bucket. It also provides `CREATE`, `DELETE` of S3 buxket, objects and Acl.
 
 ```
 {
@@ -153,3 +153,7 @@ Now we will proceed to create an IAM Role which our `tf_user` can assume for pro
 <br />
 
 ![IAM Terraform user role created](../images/iam_tf_user_role_created_2.png "IAM Terraform user role created")
+
+<br />
+
+with all the above steps, we have create an IAM User Group, User, Policy and Role to provision an S3 bucket with least previleges.

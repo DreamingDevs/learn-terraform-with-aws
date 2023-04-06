@@ -20,7 +20,7 @@ Please find below details of my local machine. I have shared the details to make
 
 <br />
 
-## Terminal Setup (optional)
+## Terminal Setup
 
 This section describes my terminal setup details. Except `brew` package manager, this terminal setup is completely optional. 
 
@@ -52,7 +52,7 @@ At the end of above exercise, iTerm2 terminal should look like as below.
 
 <br />
 
-## Development Tools Setup (Required)
+## Development Tools Setup
 
 Following development tools are used by me for curatung all the learning exercises of Terraform with AWS. There are other alternatives as well (for example, instead of using VS Code, we can opt for any other IDE as well), feel free to use any of the available alternatives.
 
