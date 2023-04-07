@@ -157,3 +157,25 @@ Now we will proceed to create an IAM Role which our `tf_user` can assume for pro
 <br />
 
 with all the above steps, we have create an IAM User Group, User, Policy and Role to provision an S3 bucket with least previleges.
+
+<br />
+
+## Configure Terraform with AWS Credentials
+
+There are many ways to configure Terraform with IAM User (`tf_user`) credentials at local development machine. We pick up the most secure approach which will be convenient for developers to work with on day to day basis.
+
+Create `.aws` folder at the root of the repository and create a file with name `credentials`. The credentials file is going to hold the IAM User credentials.
+
+> NOTE: The `credentials` file should not be versioned at Git. So also add `.aws` as an entry to `.gitignore` file.
+
+Enter the IAM User credentials as below.
+
+```
+[development]
+aws_access_key_id = XXXXXXXXXXXXXXXXXXXX
+aws_secret_access_key = XXXXXXXXXXXXXXXXXX
+```
+
+That's it, we are now good to get started with Terraform with our `tf_user`.
+
+> NOTE: IF Alternatively, if the above mentioned approach doesn't suit your needs, then feel free to set the credentials in `environment variables`. I suggest learn more about this approach from Google.
