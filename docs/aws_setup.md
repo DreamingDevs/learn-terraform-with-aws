@@ -1,6 +1,8 @@
-## Create an AWS Account
+# AWS setup and configuration
 
-<br />
+This document outlines the steps required to set up an AWS account with its resources and the associated configuration. 
+
+## Create an AWS Account
 
  - Navigate to [Create an AWS Account](https://portal.aws.amazon.com/billing/signup#/start/email) page. 
  - Enter a valid email id and root username. Proceed to verify the email id.
@@ -31,8 +33,6 @@ Proceed with the next flow of steps to enable MFA through apps like Google Authe
 
 
 ## Create an IAM user group, user, role, and policy to provide access to Terraform
-
-<br />
 
 When we created an AWS account, a root user account was provisioned for us. This account has the highest possible privileges, through which it can administer the entire AWS account. Hence leveraging the root user account for specific activities like IaC automations, etc., is highly unadvisable. We will create an appropriate IAM user with a specific role and policies with limited privileges that can be used for IaC automations through Terraform.
 
