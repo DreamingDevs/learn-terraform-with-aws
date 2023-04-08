@@ -24,3 +24,12 @@ Are you looking forward to create an AWS account and setup your local machine to
 | Day 2 | [Create an IAM user group, user, role, and policy to provide access to Terraform](./docs/aws_setup.md#create-an-iam-user-group-user-role-and-policy-to-provide-access-to-terraform) <br /> How do we test our IAM User and related configuration? Take a pause, for now review the concepts of this section and understand them. We will test our IAM User tomorrow.|
 | Day 2 | [Configure Terraform with AWS Credentials ](./docs/aws_setup.md#configure-terraform-with-aws-credentials) <br /> Let's configure Terraform on our local machine with the IAM User credentials which we created in previous section.|
 
+<br />
+
+Enjoying the flow so far? Finding it useful? Let's continue to the next phase. With you having successfully completed the first basic Terraform execution, we will now focus on the basics of Terraform.
+
+<br />
+
+| Learning Day | Sorting out Terraform basics... | 
+|--|--|
+| Day 4 | [Terraform Init](./docs/terraform_basics.md#terraform-init) <br /> You will have to set these up for sure. |
