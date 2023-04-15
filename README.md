@@ -32,4 +32,4 @@ Enjoying the flow so far? Finding it useful? Let's continue to the next phase. W
 
 | Learning Day | Sorting out Terraform basics... | 
 |--|--|
-| Day 4 | [Terraform Init](./docs/terraform_basics.md#terraform-init) <br /> You will have to set these up for sure. |
+| Day 4 | [Terraform Init](./docs/terraform_basics.md#terraform-init) <br /> Initialize the terraform project working directory with all depedencies. |
