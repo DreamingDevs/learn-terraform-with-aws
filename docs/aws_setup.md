@@ -40,6 +40,8 @@ When we created an AWS account, a root user account was provisioned for us. This
 
 > NOTE: To keep things simple, we will create a policy which will provide limited access to S3 service. This can be extended to all other services which `tf_user` needs to access.
 
+![IAM Terraform user access flow](../images/iam_tf_user_access_flow.png "IAM Terraform user access flow")
+
 Let's get started by creating an IAM user group at the [AWS Console](https://console.aws.amazon.com/).
 
 - Enter `tf_user_group` as name for the group
