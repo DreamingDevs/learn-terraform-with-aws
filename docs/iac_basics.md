@@ -16,11 +16,11 @@ Now why do we need code to do all these activities? We need because, with code, 
 
 ## Declarative vs Imperative Programming Models
 
-Declarative way of programming defines the final result / state of the infra and the tooling like `Terraform`, `Puppet` etc takes care of reaching to that final result / state.
+Declarative way of programming defines the final result / state of the infra and the tooling like `Terraform`, `CloudFormation` etc takes care of reaching to that final result / state.
 
-Imperative way is more of defininig the granular steps / instructions which the tool should follow to achieve the final result / state. Tools like `Chef` falls under this category.
+Imperative way is more of defininig the granular steps / instructions which the tool should follow to achieve the final result / state. Tools like `Ansible`, `Chef` support both declarative and imperative programming styles.
 
-> NOTE: Tools like `Ansible` can be leverage on both programming models.
+> NOTE: Tools like `Ansible`, `Chef`, `Puppet` are primarily used for configuration management instead of infra provisioning.
 
 As imperative way is more instructions based the scope of reusability of the same set of instructions over and over on the same infra resources is very minimal. Also keeping the imperative steps up-to-date with evolving infra (Configuration Drifts) is quite challenging especially when it comes to maintaining the current state of the infra resource. 
 
