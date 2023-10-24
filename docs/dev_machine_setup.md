@@ -18,7 +18,7 @@ Please find below details of my local machine. I have shared the details to make
 | Parameter | Value |
 |--|--|
 | OS | mac  |
-| Version | Monterey 12.5.1  |
+| Version | Sonoma 14.0  |
 
 <br />
 
@@ -36,15 +36,15 @@ I am only sharing my terminal setup details because I find this setup is cool an
 
 | Tool | Installation Steps | Version |
 |--|--|--|
-| Brew | `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` | 4.0.6 |
-| iTerm2 | `brew install --cask iterm2` | 3.4.19 |
+| Brew | `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` | 4.1.17 |
+| iTerm2 | `brew install --cask iterm2` | 3.4.21 |
 | On-My-Zsh | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` <br /><br /> Edit `~/.zshrc` and set `ZSH_THEME` to `agnoster`| 5.9 (x86_64-apple-darwin21.3.0) |
-| PowerLevel10k | `brew install romkatv/powerlevel10k/powerlevel10k` <br /> <br /> Execute `echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc` <br /> <br /> Run `p10k configure` to discover all options | 1.17.0 |
+| PowerLevel10k | `brew install romkatv/powerlevel10k/powerlevel10k` <br /> <br /> Now to add `powerlevel10k` zsh theme to `.zshrc`, check the path `/usr/local/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme` in your machine. If the path do not exists, find the path to `powerlevel10k.zsh-theme` <br /> <br /> Finally execute `echo "source /usr/local/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc` <br /> <br /> Run `p10k configure` to discover all options | 1.19.0 |
 | MesloLGS NF | Download and install from `https://github.com/romkatv/dotfiles-public/tree/master/.local/share/fonts/NerdFonts` | N/A |
 
 <br />
 
-> Configure iTerm2 with theme and fonts:  <br/> - `Profiles -> Select Default Profile -> Edit Default Profile -> Colors -> Color Presets… -> Solarized Dark` <br /> <br />  -`Profiles -> Select Default Profile -> Edit Default Profile -> Text -> Font -> MesloLGS NF`
+> Configure iTerm2 with theme and fonts:  <br/> - `Profiles > Select Default Profile > Edit Default Profile > Colors > Color Presets… > Solarized Dark` <br /> <br />  - `Profiles > Select Default Profile > Edit Default Profile > Text > Font > MesloLGS NF` <br /> <br /> We can turn off the mark indicators in iTerm2 <br /> - `Profiles > Select Default Profile > Edit Default Profile > Terminal > scroll down to "Shell Integration" > turn off "Show mark indicators"`.
 
 <br />
 
