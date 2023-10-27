@@ -60,10 +60,10 @@ Following development tools are used by me for curatung all the learning exercis
 
 | Tool | Installation Steps | Version |
 |--|--|--|
-| VS Code | `brew install --cask visual-studio-code`| 1.76.2 |
-| Git | `brew install git`| 2.40.0 |
-| AWS CLI | `brew install awscli`| 2.11.6 |
-| Terraform | `brew tap hashicorp/tap` <br/> `brew install hashicorp/tap/terraform`| 1.4.2 |
-| Hashicorp Terraform Plugin for VS Code | ![Terraform Plugin](../images/terraform_plugin.png "Terraform Plugin") | 2.25.4 |
+| VS Code | `brew install --cask visual-studio-code`| 1.83.1 |
+| Git | `brew install git`| 2.42.0 |
+| AWS CLI | `brew install awscli`| 2.13.29 |
+| Terraform | `brew tap hashicorp/tap` <br/> `brew install hashicorp/tap/terraform`| 1.6.2 |
+| Hashicorp Terraform Plugin (VS Code) | | 2.28.2 |
 
 <br />
