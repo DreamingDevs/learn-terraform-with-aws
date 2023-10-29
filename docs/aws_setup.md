@@ -93,7 +93,7 @@ As the next step, we will create an AWS Policy. This policy will only have least
 > NOTE: As already mentioned aboved, to keep things simple, we will create a policy which will provide limited access to S3 service. This can be extended to all other services which `tf_user` needs to access.
 
 - Select `JSON` option after selecting the `Create policy`.
-- Enter below JSON which will provide all `LIST`, `GET` permissions on S3 bucket. It also provides `CREATE`, `DELETE` of S3 buxket, objects and Acl.
+- Enter below JSON which will provide all `LIST`, `GET` permissions on S3 bucket. It also provides `CREATE`, `DELETE` of S3 bucket, objects and Acl.
 
 ```
 {
@@ -168,7 +168,7 @@ There are many ways to configure Terraform with IAM User (`tf_user`) credentials
 
 Create `.aws` folder at the root of the repository and create a file with name `credentials`. The credentials file is going to hold the IAM User credentials.
 
-> NOTE: The `credentials` file should not be versioned at Git. So also add `.aws` as an entry to `.gitignore` file.
+> NOTE: The `credentials` file should not be versioned at Git. So also add `.aws/credentials` as an entry to `.gitignore` file.
 
 Enter the IAM User credentials as below.
 
@@ -180,4 +180,18 @@ aws_secret_access_key = XXXXXXXXXXXXXXXXXX
 
 That's it, we are now good to get started with Terraform with our `tf_user`.
 
-> NOTE: IF Alternatively, if the above mentioned approach doesn't suit your needs, then feel free to set the credentials in `environment variables`. I suggest learn more about this approach from Google.
+> NOTE: Alternatively, if the above mentioned approach doesn't suit your needs, then feel free to set the credentials in `environment variables`.
+
+## Setup shared configuration for Terraform 
+
+Under `.aws` folder at the root of the repository and create a file with name `config`.
+
+> NOTE: The `config` file can be versioned through Git.
+
+Enter the following shared configuration which defined the AWS region and Terraform output format.
+
+```
+[development]
+region = us-east-2
+output = json
+```
