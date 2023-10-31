@@ -12,18 +12,27 @@ Few of the basic details related to Infrastructure as Code (IaC) which might ser
 
 <br />
 
-Are you looking forward to create an AWS account and setup your local machine to get started with Terraform? Follow through my below experiences.
+Let's get started by setting up our local development environment with development tools. Instructions are based for macOS.
 
 <br />
 
 | Learning Day | Let's get started... | 
 |--|--|
-| Day 1 | [Development Tools Setup](./docs/dev_machine_setup.md#development-tools-setup) <br /> You will have to set these up for sure. |
-| Day 1 | [Terminal Setup](./docs/dev_machine_setup.md#terminal-setup) <br /> Do not get bothered, completely optional, skip if you want. |
+| Day 0 | [Development Tools Setup](./docs/dev_machine_setup.md#development-tools-setup) <br /> You will have to set these up for sure. |
+| Day 0 | [Terminal Setup](./docs/dev_machine_setup.md#terminal-setup) <br /> Do not get bothered, completely optional, skip if you want. |
+
+<br />
+
+Are you looking forward to create an AWS account to get started with Terraform? Follow through my below experiences.
+
+<br />
+
+| Learning Day | Setting up AWS account... | 
+|--|--|
 | Day 1 | [Create an AWS Account](./docs/aws_setup.md#create-an-aws-account) <br /> This is required for learning, so create it.|
-| Day 2 | [Create an IAM user group, user, role, and policy to provide access to Terraform](./docs/aws_setup.md#create-an-iam-user-group-user-role-and-policy-to-provide-access-to-terraform) <br /> How do we test our IAM User and related configuration? Take a pause, for now review the concepts of this section and understand them. We will test our IAM User tomorrow.|
-| Day 2 | [Configure Terraform with AWS Credentials](./docs/aws_setup.md#configure-terraform-with-aws-credentials) <br /> Let's configure Terraform on our local machine with the IAM User credentials which we created in previous section.|
-| Day 2 | [Setup shared configuration for Terraform](./docs/aws_setup.md#setup-shared-configuration-for-terraform) <br /> Let's setup the shared configuration for terraform on our local machine.|
+| Day 1 | [Create an IAM user group, user, role, and policy to provide access to Terraform](./docs/aws_setup.md#create-an-iam-user-group-user-role-and-policy-to-provide-access-to-terraform) <br /> How do we test our IAM User and related configuration? Take a pause, for now review the concepts of this section and understand them. We will test our IAM User tomorrow.|
+| Day 1 | [Configure Terraform with AWS Credentials](./docs/aws_setup.md#configure-terraform-with-aws-credentials) <br /> Let's configure Terraform on our local machine with the IAM User credentials which we created in previous section.|
+| Day 1 | [Setup shared configuration for Terraform](./docs/aws_setup.md#setup-shared-configuration-for-terraform) <br /> Let's setup the shared configuration for terraform on our local machine.|
 
 <br />
 
