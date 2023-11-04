@@ -166,7 +166,7 @@ with all the above steps, we have create an IAM User Group, User, Policy and Rol
 
 There are many ways to configure Terraform with IAM User (`tf_user`) credentials at local development machine. We pick up the most secure approach which will be convenient for developers to work with on day to day basis.
 
-Create `.aws` folder at the root of the repository and create a file with name `credentials`. The credentials file is going to hold the IAM User credentials.
+Create `.aws` folder at the root of the repository and create a file with name `credentials`. The credentials file is going to hold the IAM User credentials. The credentials are tied to a `profile` which in below example is defined as `development`.
 
 > NOTE: The `credentials` file should not be versioned at Git. So also add `.aws/credentials` as an entry to `.gitignore` file.
 
@@ -188,7 +188,7 @@ Under `.aws` folder at the root of the repository and create a file with name `c
 
 > NOTE: The `config` file can be versioned through Git.
 
-Enter the following shared configuration which defined the AWS region and Terraform output format.
+Enter the following shared configuration which define the AWS region and Terraform output format. The configuration is tied to a `profile` which in below example is defined as `development`.
 
 ```
 [development]
