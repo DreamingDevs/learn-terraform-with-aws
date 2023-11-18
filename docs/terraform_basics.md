@@ -4,6 +4,41 @@ This document shares the basic information and knowledge of Terraform. Basics ar
 
 <br />
 
+## Providers
+
+A provider in Terraform is an abstraction of the upstream API using which we can interact with different cloud providers and SaaS platforms. Providers enable Terraform with different `resource` types which can be managed at target platform. Providers are typically managed by - Hashicorp (official), Partners (verified organization), and community groups.
+
+When we execute `terraform init`, providers are downloaded (if not exists) to `.terraform` directory. Following is the provider configuration for AWS provider.
+
+`required_providers` section is required for the providers which are managed by partners and community. It is used to specify source and version information of the provider. We can still use this configuration with hashicorp providers as well.
+
+NOTE: Provider version is different from Terraform version. Provider versions keep changing based on the cadence of cloud providers and SaaS platforms. 
+
+We can configure the provider with the `profile` from the `shared_config_files` and `shared_credentials_files` which provides required configuration and credentials for provider to work.
+
+```
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+provider "aws" {
+  shared_config_files      = ["${pathexpand("~/.aws/config")}"]
+  shared_credentials_files = ["${pathexpand("~/.aws/credentials")}"]
+  profile                  = "development"
+
+  assume_role {
+    role_arn = "arn:aws:iam::XXXXXXXXXXXX:role/tf_role"
+  }
+}
+```
+
+<br />
+
 ## Terraform Init
 
 `init` is used to prepare the terraform working directory by identifying, fetching and resolving all dependencies of our terraform code. 
