@@ -2,8 +2,6 @@
 
 This document shares the basic information and knowledge of Terraform. Basics are going to be basics, so no hands-on labs are present in this document. Feel free to quickly skim through the doc.
 
-<br />
-
 ## Providers
 
 A provider in Terraform is an abstraction of the upstream API using which we can interact with different cloud providers and SaaS platforms. Providers enable Terraform with different `resource` types which can be managed at target platform. Providers are typically managed by - Hashicorp (official), Partners (verified organization), and community groups.
@@ -67,8 +65,7 @@ We can always run this command multiple times, but it is recommended to run it o
 `plan` creates an execution plan and previews the changes which are going to be applied by Terraform at the target infra provider. 
 
 When we issue plan command, Terraform fetches the current state from remote provider and compares it with the latest configuration files. Finally the command proposes the list of changes which needs to be applied to make the remote objects match the latest configuration.
-
-NOTE: 
+ 
 - `-out=file` option is used to output the plan to a file.
 - `-destroy` option is used to create a plan to destroy all remote objects that currently exist.
 - `-refresh-only` option is used to update the state file to match changes from the remote provider.
