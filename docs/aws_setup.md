@@ -187,7 +187,7 @@ Under `.aws` folder at `$HOME` folder on local machine, create a file with name 
 Enter the following shared configuration which define the AWS region and Terraform output format. The configuration is tied to a `profile` which in below example is defined as `development`.
 
 ```
-[development]
+[profile development]
 region = us-east-2
 output = json
 ```
