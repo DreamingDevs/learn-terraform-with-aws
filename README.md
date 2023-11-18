@@ -43,7 +43,8 @@ Enjoying the flow so far? Finding it useful? Let's continue to the next phase. W
 | Learning Day | Sorting out Terraform commands... | 
 |--|--|
 | Day 4 | [terraform init](./docs/terraform_basics.md#terraform-init) <br /> Initialize the terraform project working directory with all depedencies. |
-| Day 4 | [terraform fmt](./docs/terraform_basics.md#terraform-fmt) <br /> Format the terraform config files with canonical format and style. |
+| Day 4 | [terraform plan](./docs/terraform_basics.md#terraform-plan) <br /> Creates an execution plan and previews the changes which are proposed by Terraform. |
+| Day 4 | [terraform fmt](./docs/terraform_basics.md#terraform-fmt) <br /> Formats the terraform config files with canonical format and style. |
 
 <br />
 
