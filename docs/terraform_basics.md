@@ -60,6 +60,35 @@ Primary activities of init are -
 
 We can always run this command multiple times, but it is recommended to run it only when any of above mentioned aspects undergo a change.
 
+<br />
+
+## Terraform Plan
+
+`plan` creates an execution plan and previews the changes which are going to be applied by Terraform at the target infra provider. 
+
+When we issue plan command, Terraform fetches the current state from remote provider and compares it with the latest configuration files. Finally the command proposes the list of changes which needs to be applied to make the remote objects match the latest configuration.
+
+NOTE: 
+- `-out=file` option is used to output the plan to a file.
+- `-destroy` option is used to create a plan to destroy all remote objects that currently exist.
+- `-refresh-only` option is used to update the state file to match changes from the remote provider.
+
+```
+-- Display the plan
+terraform plan
+
+-- Output the plan to a file
+terraform plan -out=tf.plan
+terraform show -no-color tf.plan > tfplan.txt
+```
+
+<br />
+
+## Terraform Apply
+
+<br />
+
+## Terraform Destroy
 
 <br />
 
