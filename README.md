@@ -36,15 +36,47 @@ Are you looking forward to create an AWS account to get started with Terraform? 
 
 <br />
 
-Enjoying the flow so far? Finding it useful? Let's continue to the next phase. With you having successfully completed the first basic Terraform execution, we will now focus on the basics of Terraform.
+With the AWS account now available and configured, let's do our first experiment with Terraform and wrap our heads around few details.
 
 <br />
 
 | Learning Day | Sorting out Terraform commands... | 
 |--|--|
-| Day 4 | [terraform init](./docs/terraform_basics.md#terraform-init) <br /> Initialize the terraform project working directory with all depedencies. |
-| Day 4 | [terraform plan](./docs/terraform_basics.md#terraform-plan) <br /> Creates an execution plan and previews the changes which are proposed by Terraform. |
-| Day 4 | [terraform fmt](./docs/terraform_basics.md#terraform-fmt) <br /> Formats the terraform config files with canonical format and style. |
+| Day 2 | [Provision S3 bucket](./docs/terraform_basics.md#terraform-init) <br /> TBD |
+
+<br />
+
+Enjoying the flow so far? Finding it useful? Let's continue to the next phase. With you having successfully completed the first basic Terraform execution, we will now focus on the important Terraform commands.
+
+<br />
+
+| Learning Day | Sorting out Terraform commands... | 
+|--|--|
+| Day 3 | [terraform init](./docs/terraform_basics.md#terraform-init) <br /> Initialize the terraform project working directory with all depedencies. |
+| Day 3 | [terraform plan](./docs/terraform_basics.md#terraform-plan) <br /> Creates an execution plan and previews the changes which are proposed by Terraform. |
+| Day 3 | [terraform workspace](./docs/terraform_basics.md#terraform-workspace) <br /> TBD |
+| Day 3 | [terraform apply](./docs/terraform_basics.md#terraform-apply) <br /> TBD |
+| Day 3 | [terraform validate](./docs/terraform_basics.md#terraform-validate) <br /> TBD |
+| Day 3 | [terraform destroy](./docs/terraform_basics.md#terraform-destroy) <br /> TBD |
+| Day 3 | [terraform state](./docs/terraform_basics.md#terraform-state) <br /> TBD |
+| Day 3 | [terraform import](./docs/terraform_basics.md#terraform-import) <br /> TBD |
+| Day 3 | [terraform taint](./docs/terraform_basics.md#terraform-taint) <br /> TBD |
+| Day 3 | [terraform test](./docs/terraform_basics.md#terraform-test) <br /> TBD |
+| Day 3 | [terraform fmt](./docs/terraform_basics.md#terraform-fmt) <br /> Formats the terraform config files with canonical format and style. |
+
+<br />
+
+Hope you were able to get a gist of different Terraform commands, soon we will find their relevance in overall infra management. But now lets focus to understand few important concepts of Terraform.
+
+<br />
+
+| Learning Day | Lets understand how Terraform works...  | 
+|--|--|
+| Day 5 | [Architecture](./docs/terraform_concepts.md#architecture) <br /> TBD |
+| Day 5 | [Plugins](./docs/terraform_concepts.md#architecture) <br /> TBD |
+| Day 5 | [State Management](./docs/terraform_concepts.md#architecture) <br /> TBD |
+| Day 5 | [Locks](./docs/terraform_concepts.md#architecture) <br /> TBD |
+| Day 5 | [Test Strategy](./docs/terraform_concepts.md#architecture) <br /> TBD |
 
 <br />
 
